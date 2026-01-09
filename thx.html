@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Mulțumim pentru mesaj | Piese Auto Polonia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (opțional, pentru icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root{
+      --red:#C8102E;
+      --dark:#0D0D2A;
+      --white:#ffffff;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family:'Montserrat', sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background: linear-gradient(135deg, #0D0D2A 0%, #191A3F 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:5vw;
+    }
+
+    .thank-card{
+      background:#fff;
+      max-width:520px;
+      width:100%;
+      padding:4vh 4vw;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 20px 50px rgba(0,0,0,.35);
+      animation:fadeUp .8s ease forwards;
+    }
+
+    .icon{
+      width:70px;
+      height:70px;
+      margin:0 auto 2vh;
+      border-radius:50%;
+      background:var(--red);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-size:30px;
+      box-shadow:0 0 25px rgba(200,16,46,.5);
+    }
+
+    h1{
+      font-size:clamp(22px, 3vw, 34px);
+      color:var(--dark);
+      margin-bottom:1vh;
+      font-weight:800;
+    }
+
+    p{
+      font-size:clamp(14px, 1.1vw, 18px);
+      color:#444;
+      line-height:1.6;
+      margin-bottom:3vh;
+    }
+
+    .actions{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:.9rem 1.4rem;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:15px;
+      transition:all .25s ease;
+    }
+
+    .btn-primary{
+      background:var(--red);
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:#b20f28;
+      box-shadow:0 0 20px rgba(200,16,46,.4);
+      transform:translateY(-2px);
+    }
+
+    .btn-outline{
+      border:2px solid var(--red);
+      color:var(--red);
+      background:transparent;
+    }
+
+    .btn-outline:hover{
+      background:var(--red);
+      color:#fff;
+    }
+
+    .small{
+      margin-top:3vh;
+      font-size:13px;
+      color:#777;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(40px);}
+      to{opacity:1; transform:translateY(0);}
+    }
+
+    @media (max-width:600px){
+      .thank-card{
+        padding:4vh 6vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-card">
+    <div class="icon">
+      <i class="fa-solid fa-check"></i>
+    </div>
+
+    <h1>Mulțumim pentru mesaj!</h1>
+    <p>
+      Cererea ta a fost trimisă cu succes.<br>
+      Te vom contacta în cel mai scurt timp cu detalii despre piesele solicitate.
+    </p>
+
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Înapoi pe site</a>
+      <a href="https://wa.me/40736047733" target="_blank" class="btn btn-outline">
+        Contact rapid WhatsApp
+      </a>
+    </div>
+
+    <div class="small">
+      Piese Auto Polonia • Dezmembrări auto verificate
+    </div>
+  </div>
+
+</body>
+</html>
